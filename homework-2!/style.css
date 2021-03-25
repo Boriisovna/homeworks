@@ -1,0 +1,23 @@
+body {
+    background: rgb(207, 219, 235);
+}
+
+td, th {
+    background:rgb(187, 204, 211); 
+    padding: 10px;
+}
+.name {
+    margin-top: 2em; 
+    margin-bottom: 2em;
+}
+input{
+    margin-top: 1em; 
+}
+div {
+	width: 500px;  
+	margin: 0px auto;}
+
+    h1{text-align: center;
+    color: rgb(32, 41, 82);
+font-style: italic;
+}
