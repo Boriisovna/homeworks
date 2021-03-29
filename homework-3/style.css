@@ -44,21 +44,25 @@ table { border:rgb(88, 88, 88) 1px solid;
     color: rgba(165, 165, 165, 0.863); 
 }
 .search {
-    background-color: rgb(197, 197, 197);
+    background-color: rgb(163, 163, 163);
     border-radius: 7px;
+    padding: none;
+    cursor: text;
 }
 .loupe {
+    padding-top: 5px;
+    padding-left: 5px;
     width: 15px; 
 }
 .searchpad{
     padding: 2px;
 }
-
 .input{
-    background-color: rgba(163, 163, 163, 0.829);
-    border-radius: 10px;
+    background-color: rgb(163, 163, 163);
     border: none;
     outline: none;
-   
-
-}s
+    color: rgb(0, 0, 0);
+    width: 150px;
+    font-size: 15px;   
+    border-radius: 7px;
+}
