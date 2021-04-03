@@ -110,10 +110,13 @@ width: 100%;
 }
 .copy{
 position: absolute;
-margin: 335px ;
-line-height: 14px;
-margin-left: 166px;
+width: 100%;
 }
+.copy p{
+    margin-top: 335px ;
+    line-height: 14px;
+    margin-left: 166px;
+} 
 
 h5{
 font-weight: bold;
