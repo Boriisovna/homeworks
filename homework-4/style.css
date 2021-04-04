@@ -1,3 +1,5 @@
+
+
 .mock-up{
     font-family: Lato;
     font-style: normal;
@@ -105,7 +107,7 @@ margin: 85px 1209px 328px 166px;
 position: absolute;
 margin: 140px 1020px 241px 166px;
 line-height: 150%;
-width: 100%;
+
 
 }
 .copy{
@@ -224,7 +226,7 @@ select {
     -moz-appearance: none;
     background-image: url("image/ChevronDown\(E70D\).svg");
     background-position-x: 500px;
-    background-position-y: 20px;
+    background-position-y: 25px;
     background-repeat: no-repeat;
     font-size: 16px;
     line-height: 19px;
