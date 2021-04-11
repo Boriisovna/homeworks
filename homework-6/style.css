@@ -1,0 +1,57 @@
+.container{
+    display: flex;
+    justify-content: center;
+}
+
+
+.box{
+    width: 50px;
+    height: 50px;
+    background-color: rgb(204, 204, 204);
+    margin: 10px;
+}
+
+
+.box:last-child {
+    background-color: rgb(32, 0, 177);
+}
+
+.column:nth-child(3) .box {
+    background-color: red;}
+
+button {
+    background-color: rgb(120, 201, 183);
+    border: none;
+    padding: 20px 40px 20px 40px;
+    border-radius: 30px;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    outline: none;
+
+}
+.button{
+    display: flex;
+    justify-content:  center;
+    margin-top: 30px;
+    align-items: center;
+    box-shadow: rgb(192, 192, 192);
+}
+.button :hover{
+    background-color: rgb(0, 165, 177);
+}
+
+.button::before, 
+.button::after {
+   content: '';
+   height: 5px;
+   width: 15%;
+   border-top: 2px solid #b4b4b4;
+   border-bottom: 2px solid #b4b4b4;
+}
+.button::before {
+    margin-right: 25px;
+}
+
+.button::after {
+margin-left: 25px;
+}
