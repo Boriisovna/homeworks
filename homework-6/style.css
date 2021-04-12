@@ -11,7 +11,6 @@
     margin: 10px;
 }
 
-
 .box:last-child {
     background-color: rgb(32, 0, 177);
 }
@@ -27,7 +26,6 @@ button {
     color: rgb(255, 255, 255);
     cursor: pointer;
     outline: none;
-
 }
 .button{
     display: flex;
