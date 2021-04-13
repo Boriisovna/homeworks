@@ -9,24 +9,26 @@ body{
 
 .container{
 display: flex;
-/* min-height: 850px;
-min-width: 1340px; */
-}
-/* .nav_item{
-    height: 100%;
-} */
 
+}
 
 .nav{
     background-color: rgb(0, 0, 0);
-    margin: 25px 32px 25px 32px;
-    width: 9%;
+
+    margin: 25px 50px 25px 32px;
+    
+    
+    width: 10%;
     height: 852px;
     border-radius: 24px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+    -webkit-box-shadow: 19px 16px 13px 3px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 19px 16px 13px 3px rgba(34, 60, 80, 0.2);
+    box-shadow: 19px 16px 13px 3px rgba(34, 60, 80, 0.2);
+
 }
 
 .item_logo_nav_container{
@@ -39,13 +41,14 @@ min-width: 1340px; */
  
 } 
 .item_logo{
-    margin-top: 40%;
+    margin-top: 50%;
 }
 
 .nav_link_exit{
 margin-bottom: 30%;
 } 
 /* main */
+
 .hello{
     display: flex;
     margin: 3.5em 4em 2.4em 3em;
@@ -141,8 +144,6 @@ cursor: pointer;
 .spanish_body_btn{
     margin-right: 23px;
 }
-
-
 
 .spanish_body{
 display: flex;
@@ -265,14 +266,147 @@ margin: auto 24px auto 8px;}
 .img_clock{
     padding-right: 7px;
 }
+/*          aside            */
+header{
+    display: flex;
+    align-items: center;
+    margin-top:  45px;
+    justify-content: space-around;
+    margin-right: 35px;
+}
 
-.cours_rating
+/* input */
+form {
+    width: 300px;
+    display: flex;
+  }
+  input {
+    position: relative;
+    border: none;
+    outline: none;
+    width: 100%;
+    height: 42px;
+    padding-left: 40px;
+    background: #F5F5F7;
+     border-radius: 8px; 
+  }
+.image_search{
+    position: absolute;
+    padding: 10px 10px;
+    cursor: pointer;
+}
+form {
+margin-right: 36px;
+}
 
+.aside{
+    margin-left: 64px;
+}
+    
+ .notification  {
+    margin-right: 25px;
+    cursor: pointer;
+} 
+.arrow_down{
+    margin-left: 8px;
+    cursor: pointer;
+}
+.courses_status{
+display: flex;
+justify-content: space-between;
+}
+.courses_quantity{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #F5F5F7;
+    border-radius: 14px;
+    width: 47%;
+height: 96.33px;
+margin-top: 24px;
+}
 
+h4{
+font-family: 'Baloo Bhai 2';
+font-style: normal;
+font-weight: bold;
+font-size: 64px;
+line-height: 102px;
+color: #000000;
+margin: 0 11px;
+}
 
+.wrapper_aside{
+    width: 90%;
+}
+.courses_status p{
+margin-top: 10px;
+}
+p{
+font-family: 'Roboto';
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 24px;
+color: #000000;}
+/* middle */
+.middle{
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+}
+.statistics_option_start{
+ display: flex;
+ justify-content: start;
+}
+.statistics_option{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+.statistics_option_end{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 88px;
+     height: 32px;
+     background: #F5F5F7;
+     border-radius: 8px;
+}
+.weekly{
+font-family: 'Roboto';
+font-style: normal;
+font-weight: bold;
+font-size: 13px;
+line-height: 15px;
+color: #000000;
+}
+.bottom{
+background: #F5F5F7;
+border-radius: 14px;
+margin-top: 50px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+height: 100%;
 
-
-.aside {
-    background-color: rgb(107, 28, 28);
-   
+}
+.bottom_text{
+    display: flex;
+    flex-direction: column;
+    margin-left: 24px;
+}
+.bottom_text h2{
+    padding: 0;
+    margin-top: 24px;
+}
+.bottom_text p{
+    margin-top: 0px;
+    margin-bottom: 24px;
+}
+.bottom_text button{
+margin-bottom: 15px;
+}
+.bottom_img{
+    margin-right: 48px;
 }
