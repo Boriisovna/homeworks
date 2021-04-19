@@ -567,6 +567,24 @@ margin-top: 15px;
     cursor: pointer;
     padding-bottom: 80px;
 }
+
+
+@media(max-width: 720px){
+    .item_group {
+        width: 60%;
+        margin: 0 auto ;
+        margin-top: 60px;
+        display: flex;
+        height: 300px;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        cursor: pointer;
+    }
+}
+
+
+
+
 /* ---------------- seven block -----------------*/
 .seven_block{
     display: flex;
@@ -622,16 +640,42 @@ margin-top: 15px;
     margin: 0px;
 }
 
+
+
+
+@media(max-width: 720px){
+    .seven_block{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .seven_block_text{
+       width: 80%;
+       text-align: center;
+    }
+    .seven_block_text p{
+        padding-right: 20px;
+        width: 95%;
+    }
+}
+
+
+
+/* ---------------- footer -----------------*/
 footer{
     background:#00ADEE; 
     padding-top:  23px;
     padding-bottom:  23px;
   
 }
+.footer_container{
+    max-width: 90%;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
 .footer_item{
     display: flex;
     justify-content: space-between;
-   margin: auto 163px;
 }
 .sports{
     display: flex;
@@ -655,6 +699,7 @@ text-decoration: none;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
     
 }
 
@@ -670,4 +715,25 @@ letter-spacing: -0.02em;
 color: #FFFFFF;
 font-weight: bold;
 margin-left: 5px;
+}
+@media(max-width: 720px){
+    .footer_item{
+        flex-direction: column;
+        
+    }
+
+    .links{
+        order: 2;
+        justify-content: start;
+        margin: 40px 0;
+    }
+    .items{
+        justify-content: start;
+        
+    }
+
+    
+
+
+
 }
