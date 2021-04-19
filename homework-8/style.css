@@ -1,5 +1,6 @@
 *{
     font-family: 'Lato', sans-serif;
+    overflow-x: hidden;
 }
 body{
 margin: 0px;
@@ -13,6 +14,27 @@ min-height: 665px;
 background: url(images/header.png) no-repeat right top ;
 background-size: contain;
 }
+
+ @media(max-width: 900px){
+  header{
+    width: 100%;
+    height: 100%;
+    background: url(images/header.png) no-repeat right top;
+    background-size: contain;}
+}
+
+@media(max-width: 720px){
+    header{
+        background: #F4F6F9;
+        width: 100%;
+        overflow: hidden;
+    }
+    .block_text{
+        align-items: center;
+    }
+  }
+
+
 .container{
     max-width: 1075px;
     margin: 0 auto;
@@ -30,6 +52,8 @@ background-size: contain;
     margin-top: 50px;
     margin-bottom: 100px;
 }
+
+
 .icon p{
 font-size: 24px;
 line-height: 29px;
@@ -72,10 +96,47 @@ button{
     color: transparent;
     margin-top: 35px;
 }
+
+
+@media(max-width: 720px){
+    .icon{
+        margin-top: 30px;
+        margin-bottom: 65px;
+    }
+    .text_h h1 {
+        font-size: 30px;
+        line-height: 40px;
+       
+    }
+    .text_h{
+        min-width: 290px;
+
+    }
+    .text_p {
+        width: 290px;
+    }
+    
+  }
+
+  @media(max-width: 373px){
+    .buttons{
+        margin-left:70px ;
+    }
+    .header{
+        min-height: 100%;
+    }
+    .text_h{
+        width: 100%;
+
+    }
+    .text_p {
+        width: 290px;
+    }
+}
+
 /* --------------------second block -----------------------------*/
 
 .second_block{
-height: 37em;
 background: linear-gradient(270deg, #FFFFFF 50%, rgba(255, 255, 255, 0) 80.14%), rgba(255, 255, 255, 0.4) url(images/second.png) no-repeat left bottom;
 background-size: contain;
 width: 100%;
@@ -85,13 +146,13 @@ align-items: center;
 }
 .second_block_container{
     justify-content: space-between;
-    width: 80%;
-    height: 85%;
     display: flex;
-    flex-direction: row;
+    align-items: center;
+
 }
 .img_container{
     width: 50%;
+    
 }
 .text_container{
     height: 100%;
@@ -101,32 +162,36 @@ align-items: center;
 }
 .img{
     position: relative;
-    height: 100%;
-    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 .group_img_1{
     position: relative;
-    width: 460px;
-    height: 218.06px;
+    width:80%;
+    height: 80%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    left: -5.25em;
-    z-index: 1;
+    left: -2%;
+    top:40px;
+    z-index: 2;
+    flex: 0 1 auto;
 }
 .group_img_2{
-    width: 22.5em;
     position: relative;
-    left: 1em;
-    top: 5px;
+    left: 12em;
+    width:80%;
+    height: 80%;
+    top: -70px;
+    display: flex;
+    flex: 0 1 auto;
+    
 }
 
 .text_container{
-    width: 55%;
-    margin-left: 70px;
+    width: 50%;
+    padding-left: 70px;
 }
 .text_container h5{
     font-style: normal;
@@ -196,10 +261,17 @@ color: #FFFFFF;
 .fifth_block{
     height: 430px;
     display: flex;
+    flex: 0 1 200px;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
+    position: relative;
     
+}
+.fifth_block .title{
+    margin: 0px;
+    padding-top: 70px;
+    padding-bottom: 70px;
 }
 .title{
 font-style: normal;
@@ -208,6 +280,7 @@ font-size: 28px;
 line-height: 37px;
 color: #333333;
 text-align: center;
+overflow: hidden;
 }
 
 .fifth_block h3 {
@@ -217,6 +290,7 @@ text-align: center;
 .cards {
     display: flex;
     justify-content: space-between;
+    flex: 1 0 auto;
 }
 
 .card {
@@ -225,6 +299,8 @@ border: 1px solid #828282;
 box-sizing: border-box;
 border-radius: 4px;
 padding: 15px;
+height: 100%;
+overflow: hidden;
 }
 
 .card_title{
@@ -255,10 +331,8 @@ margin-top: 15px;
     position: relative;
 }
 .arrow_left{
-    position: absolute;
-    right: -30px;
-    top: 50px;
-    z-index: 2;
+    position: relative;
+    top: -110px;
     cursor: pointer;
 }
     
@@ -268,11 +342,18 @@ margin-top: 15px;
 }
 
 .arrow_right{
-    position: absolute;
-    left: -30px;
-    top: 50px;
-    z-index: 2;
+    position: relative;
+    top: -110px;
     cursor: pointer;
+}
+.arrows{
+    overflow: visible;
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-grow: 1;
+    width: 1150px;
+   
 }
 
 .twitter{
@@ -281,10 +362,15 @@ margin-top: 15px;
 .gradient{
     background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(40,40,138,0) 15%, rgba(9,9,121,0) 85%, rgba(255,255,255,1) 100%);    
     width: 100%;
-    height: 50%;
-    position: relative;
-    top: -35%
+    height: 100%;
+    position: absolute;
 }
+.dots{
+    overflow: hidden;
+    padding-bottom: 20px;
+    cursor: pointer;
+}
+
 /* ---------------- six block -----------------*/
 .six_block{
     background: #FAFAFA;  
@@ -305,17 +391,22 @@ margin-top: 15px;
 .seven_block{
     display: flex;
     justify-content: space-between;
-
+    overflow:hidden;
+    height: 100%;
 }
 
+
+
 .seven_block_img{
+    display: flex;
+    flex: 0 0 50%;
     width: 100%;
-    height: 100%;
 }
 .seven_block_text{
     display: flex;
    flex-direction: column;
    margin-left: 60px;
+   flex: 0 1 200%;
     
 }
 .seven_text_container {
@@ -331,7 +422,8 @@ margin-top: 15px;
     cursor: pointer;
     background-color:transparent;
     color: transparent;
-    margin-bottom: 40px;
+    padding-bottom: 40px;
+    overflow: hidden;
 }
 
 
@@ -354,8 +446,8 @@ margin-top: 15px;
 
 footer{
     background:#00ADEE; 
-    padding-top:  53px;
-    padding-bottom:  53px;
+    padding-top:  23px;
+    padding-bottom:  23px;
   
 }
 .footer_item{
@@ -393,14 +485,10 @@ text-decoration: none;
 margin-right: 15px;
 }
 
-.sports p{
+.sports p {
 font-size: 24px;
 line-height: 29px;
 letter-spacing: -0.02em;
 color: #FFFFFF;
 font-weight: bold;
-margin-left: 5px;
-}
-.color{
-    fill:rgb(255, 0, 0)
-}
+margin-left: 5px;}
