@@ -587,6 +587,9 @@ button {
         left: 400px;
 
     }
+    .gradient{
+        display: none;
+    }
 }
 
 @media(max-width: 630px) {
