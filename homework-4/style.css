@@ -38,6 +38,9 @@ line-height: 43px;
 color: #FFFFFF;
 }
 
+img{
+    cursor: pointer;
+}
 .bodytext p{
     position: absolute;
     width: 445px;
@@ -101,13 +104,13 @@ top: 94px;
 .adress h5{
 position: absolute;
 margin: 85px 1209px 328px 166px;
+cursor: pointer;
 }
 
 .adress p{
 position: absolute;
 margin: 140px 1020px 241px 166px;
 line-height: 150%;
-
 
 }
 .copy{
@@ -131,21 +134,25 @@ color: #101010;
     font-weight: normal;
     font-size: 12px;
     color: #101010;
+   
 }
+
 
 .services{
     position: absolute;
-
+    cursor: pointer;
     margin: 55px 450px 186px;
 }
 .getintouch{
     position: absolute;
     margin: 55px 734px 222px;
+    cursor: pointer;
 }
 .support{
     position: absolute;
     margin: 55px 1022px 264px;
     width: 100px;
+    cursor: pointer;
 }
 .fb,
 .in,
@@ -189,8 +196,9 @@ color: #101010;
     width:160px ;
     height: 50px;
     margin-top: 27px;
-    position: absolute;
+    position: absolute; 
 }
+
 .submitnow{
 background: #ED4C5C;
 border: 1.5px solid #ED4C5C;
@@ -200,6 +208,12 @@ width: 100%;
 height: 100%;
 color: white;
 outline: none;
+cursor: pointer;
+}
+.submitnow:hover {
+	background: #f57683;
+	color: #0000003d;
+    transition: 0.2s;
 }
 
 .inputfirst,
