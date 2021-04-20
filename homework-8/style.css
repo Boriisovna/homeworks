@@ -578,16 +578,19 @@ button {
 
     .arrows {
         width: 65%;
-       
+
     }
-    .arrows .arrow_left{
+
+    .arrows .arrow_left {
         display: none;
     }
-    .arrows .arrow_right{
+
+    .arrows .arrow_right {
         left: 400px;
 
     }
-    .gradient{
+
+    .gradient {
         display: none;
     }
 }
@@ -609,21 +612,25 @@ button {
         width: 90%;
     }
 }
+
 @media(max-width: 480px) {
     .arrows {
         width: 100%;
     }
 }
+
 @media(max-width: 450px) {
     .arrows {
         width: 115%;
     }
 }
+
 @media(max-width: 400px) {
     .arrows {
         width: 140%;
     }
 }
+
 @media(max-width: 415px) {
     .arrows {
         width: 135%;
@@ -825,7 +832,8 @@ footer {
         justify-content: start;
 
     }
-    .link{
+
+    .link {
         margin-right: 10px;
     }
 
