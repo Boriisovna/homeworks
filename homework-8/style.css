@@ -578,6 +578,14 @@ button {
 
     .arrows {
         width: 65%;
+       
+    }
+    .arrows .arrow_left{
+        display: none;
+    }
+    .arrows .arrow_right{
+        left: 400px;
+
     }
 }
 
@@ -598,7 +606,26 @@ button {
         width: 90%;
     }
 }
-
+@media(max-width: 480px) {
+    .arrows {
+        width: 100%;
+    }
+}
+@media(max-width: 450px) {
+    .arrows {
+        width: 115%;
+    }
+}
+@media(max-width: 400px) {
+    .arrows {
+        width: 140%;
+    }
+}
+@media(max-width: 415px) {
+    .arrows {
+        width: 135%;
+    }
+}
 
 
 /* ---------------- six block -----------------*/
@@ -787,12 +814,16 @@ footer {
 
     .links {
         order: 2;
-        justify-content: start;
         margin: 40px 0;
+        flex-wrap: wrap;
     }
 
     .items {
         justify-content: start;
 
     }
+    .link{
+        margin-right: 10px;
+    }
+
 }
