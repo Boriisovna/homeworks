@@ -45,32 +45,66 @@ header::after {
     position: absolute;
 }
 
+.nav-contein {
+    width: 100%;
+}
+
+
+
+
+.form_position {
+    margin: 0 auto;
+}
+
+@media (max-width:767px) {
+    .conein {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .form_position {
+        margin: 0px;
+        width: 3%;
+        order: 2;
+    }
+
+    .list {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+}
+
 /* -------------------main------------------ */
-main{
+main {
     margin-top: 25px;
 }
-h1{
-font-style: normal;
-font-weight: 500;
-font-size: 26px;
-line-height: 32px;
-display: flex;
-align-items: center;
-text-align: center;
-color: #262626;
-margin:0;
+
+h1 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 32px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #262626;
+    margin: 0;
 }
-.btn{
-padding-left:20px;
-padding-right:20px;
-border-radius: 3px;
-font-weight: bold;
-font-size: 14px;
-line-height: 17px;
-display: flex;
-align-items: center;
+
+.btn {
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 3px;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    display: flex;
+    align-items: center;
 }
-.drop{
+
+.drop {
     border-radius: 3px;
     font-weight: bold;
     font-size: 14px;
@@ -78,74 +112,84 @@ align-items: center;
     display: flex;
     align-items: center;
     background: #4094EF;
-border-radius: 3px; 
-}
-.btn-secondary:hover{
-    color: #fff;
-    background-color: #007bff;
-    border-color: #007bff ;
-    
+    border-radius: 3px;
 }
 
-.button{
-    margin:auto 8px auto 26px;
+.btn-secondary:hover {
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+
 }
+
+.button {
+    margin: auto 8px auto 26px;
+}
+
 .btn-secondary {
     color: #fff;
     background: #4094EF;
     border-radius: 3px;
     border: none;
 }
-.dropdown-toggle{
-    padding:0px 10px;
-}
-.user_info{
-    margin-bottom: 20px;
-}
-h4{
-font-weight: 500;
-font-size: 17px;
-line-height: 21px;
-align-items: center;
-color: #262626;
-margin-right: 39px ;
+
+.dropdown-toggle {
+    padding: 0px 10px;
 }
 
-.information{
+.user_info {
+    margin-bottom: 20px;
+}
+
+h4 {
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 21px;
+    align-items: center;
+    color: #262626;
+    margin-right: 39px;
+}
+
+.information {
     margin-top: 20px;
 }
+
 .information p {
- margin: 0;
-font-style: normal;
-font-weight: normal;
-font-size: 17px;
-line-height: 25px;
-color: #262626;
+    margin: 0;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 25px;
+    color: #262626;
 }
-.information a{
-  text-decoration: none;
+
+.information a {
+    text-decoration: none;
 }
-.stories-group img{
+
+.stories-group img {
     margin: 56px 40px 5px 0px;
     border: 1px solid rgba(155, 155, 155, 0.651);
     border-radius: 100%;
-    padding:2px;
+    padding: 2px;
 
 }
-.story p{
-     padding-right:45px;
+
+.story p {
+    padding-right: 45px;
     display: flex;
     justify-content: center;
     align-items: center;
     font-weight: bold;
 }
-.posts_tags{
+
+.posts_tags {
     width: 100%;
     height: 1px;
     background: #DBDBDB;
 }
 
-.link{
+.link {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -154,49 +198,53 @@ color: #262626;
 
 }
 
-.posts_tags{
+.posts_tags {
     display: flex;
-    justify-content: center;}
-  
+    justify-content: center;
+}
 
-.posts{
-    border-top: 1px solid rgb(0, 0, 0) ;
+
+.posts {
+    border-top: 1px solid rgb(0, 0, 0);
     margin-right: 64px;
 }
-.tags{
+
+.tags {
     /* padding-left: 80px; */
     color: grey;
 }
 
 
 
-.link a{
-font-weight: bold;
-font-size: 12px;
-line-height: 15px;
-letter-spacing: 0.09em;
-color: #262626;
-text-decoration: none;
-padding-left: 10px;
+.link a {
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 0.09em;
+    color: #262626;
+    text-decoration: none;
+    padding-left: 10px;
 }
 
-.tags:hover{
-  
+.tags:hover {
+
     transform: scale(1);
-    border-top: 1px solid #262626 ;
-  transition: all 0.3s ease; 
+    border-top: 1px solid #262626;
+    transition: all 0.3s ease;
 }
-.tags a:hover{
+
+.tags a:hover {
     color: rgb(0, 0, 0);
 }
-.tags a{
+
+.tags a {
     color: #8F8F8F;
 }
 
-.photos{
+.photos {
     margin-top: 50px;
 }
 
-.col-4 img{
+.col-4 img {
     width: 100%;
 }
