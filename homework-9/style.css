@@ -57,7 +57,7 @@ header::after {
 }
 
 @media (max-width:767px) {
-    .conein {
+    .nav-contein {
         display: flex;
         flex-direction: column;
     }
@@ -65,14 +65,17 @@ header::after {
     .form_position {
         margin: 0px;
         width: 3%;
-        order: 2;
+        justify-self: start;
+
     }
 
     .list {
         display: flex;
         flex-direction: column;
+        justify-self: start;
 
     }
+
 
 }
 
