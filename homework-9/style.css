@@ -15,6 +15,12 @@
     background-repeat: no-repeat;
     background-position-y: center;
     background-position-x: 60px;
+    transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
+}
+
+.form-control:focus {
+    background-image: none;
+
 }
 
 .badge {
@@ -44,18 +50,19 @@ header::after {
     background: #DBDBDB;
     position: absolute;
 }
+
 .nav-contein {
     width: 100%;
-    overflow-y: scroll;
+
 }
 
 .form_position {
     margin: 0 auto;
 }
-.list svg{
-   cursor: pointer ;
-}
 
+.list svg {
+    cursor: pointer;
+}
 
 
 
@@ -63,6 +70,7 @@ header::after {
     .nav-contein {
         display: flex;
         flex-direction: column;
+        overflow-y: scroll;
     }
 
     .form_position {
