@@ -302,7 +302,26 @@ margin-right: 36px;
  .notification  {
     margin-right: 25px;
     cursor: pointer;
+    display: flex;
 } 
+.badge{
+position: relative;
+left: -9px;
+top:-4px;
+width: 14px;
+height: 14px;
+background: #F45B5B;
+border-radius: 100%;
+padding: 8x;
+display: flex;
+justify-content: center;
+align-items: center;
+font-family: 'Roboto';
+font-size: 10px;
+line-height: 22px;
+color: #FFFFFF;
+}
+
 .arrow_down{
     margin-left: 8px;
     cursor: pointer;
