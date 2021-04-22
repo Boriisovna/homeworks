@@ -1,3 +1,8 @@
+body{
+    min-width: 363px;
+}
+
+
 /* -------------------header------------------ */
 
 .form-control {
