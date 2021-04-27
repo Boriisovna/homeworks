@@ -1,0 +1,22 @@
+$maintext: #505F98;
+$text: #6F7CB2;
+$logo: #37447E;
+$title: #091133;
+$grey: #5D6970;
+$unactive: #929ECC;
+
+@mixin breakpoint($point) {
+    @if $point == lg{
+        @media(max-width:992px){@content;}
+    }
+    @else if $point == md{
+        @media(max-width:625px){@content;}
+    }
+    @else if $point == sm{
+        @media(max-width:500px){@content;}
+    }
+    @else if $point == xs{
+        @media(max-width:450px){@content;}
+    }
+       
+}
