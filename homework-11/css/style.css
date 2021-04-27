@@ -27,9 +27,9 @@ button {
   color: #FFFFFF;
   background: #111B47;
   border-radius: 2px;
-  border: none;
   padding: 5px 30px 5px 30px;
   border: 2px solid #091133;
+  cursor: pointer;
 }
 
 .nav {
@@ -66,9 +66,12 @@ header {
 
 header button {
   font-size: 12px;
-  line-height: 18px;
   width: 140px;
   height: 26px;
+}
+
+header .logo {
+  margin-right: 15%;
 }
 
 .nav {
@@ -92,6 +95,21 @@ header button {
 
 .nav li > a {
   color: #505F98;
+}
+
+.nav li > a:hover {
+  color: #091133;
+  font-weight: 700;
+}
+
+button:hover {
+  background-color: #505F98;
+  -webkit-transition-duration: 0.2s;
+          transition-duration: 0.2s;
+  border-color: #505F98;
+  -webkit-box-shadow: 3px 3px 10px 0px #090c16bf;
+          box-shadow: 3px 3px 10px 0px #090c16bf;
+  color: #091133;
 }
 
 .section_first {
@@ -141,6 +159,16 @@ header button {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   margin-left: 30px;
+}
+
+.container .transparent:hover {
+  background-color: #505F98;
+  -webkit-transition-duration: 0.2s;
+          transition-duration: 0.2s;
+  border-color: #505F98;
+  -webkit-box-shadow: 3px 3px 10px 0px #090c16bf;
+          box-shadow: 3px 3px 10px 0px #090c16bf;
+  color: #091133;
 }
 
 .section_first__image {
@@ -200,7 +228,7 @@ header button {
 }
 
 .section_third {
-  margin-bottom: 20%;
+  margin-bottom: 15%;
 }
 
 .section_third .text {
@@ -212,14 +240,16 @@ header button {
 }
 
 .section_fourth {
-  background: url(images/footer.png);
-  background-repeat: no-repeat;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
 }
 
 .section_fourth .text {
-  margin: 0 auto;
+  margin: 20% auto 15% auto;
   text-align: center;
-  margin-bottom: 20%;
   width: 45%;
 }
 
@@ -244,6 +274,12 @@ header button {
   text-align: center;
   color: #5D6970;
   margin-bottom: 9px;
+}
+
+.footer_img {
+  position: absolute;
+  top: 10%;
+  z-index: -1;
 }
 
 .footer {
@@ -291,6 +327,12 @@ header button {
   color: #929ECC;
 }
 
+.footer .footer_botoom .nav li > a:hover {
+  color: #091133;
+  -webkit-transition-duration: 0.2s;
+          transition-duration: 0.2s;
+}
+
 .footer .footer_botoom .social_links {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -305,6 +347,12 @@ header button {
 
 .footer .footer_botoom .social_links a:not(:last-child) {
   margin-right: 30px;
+}
+
+.footer .footer_botoom .social_links path:hover {
+  fill: #091133;
+  -webkit-transition-duration: 0.2s;
+          transition-duration: 0.2s;
 }
 
 .line {

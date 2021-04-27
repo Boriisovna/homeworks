@@ -27,9 +27,9 @@ a {
     color: #FFFFFF;
     background: #111B47;
     border-radius: 2px;
-    border: none;
     padding: 5px 30px 5px 30px;
     border: 2px solid $title;
+    cursor: pointer;
 }
 
 %nav {
@@ -60,12 +60,14 @@ header {
     justify-content: space-between;
     align-items: center;
 
-    
+
     button {
         font-size: 12px;
-        line-height: 18px;
         width: 140px;
         height: 26px;
+    }
+    .logo{
+        margin-right: 15%;
     }
 
 }
@@ -77,16 +79,22 @@ header {
     list-style-type: none;
     padding-left: 0;
     @extend %nav;
+
     li {
         padding-right: 60px;
-    
+
         &:last-child {
             padding-right: 0px;
         }
-    
+
         >a {
             color: $maintext;
+            &:hover{
+                color: $title;
+                font-weight: 700;
+                }
         }
+        
     }
 }
 
@@ -97,6 +105,13 @@ header {
 
 button {
     @extend %btn;
+    &:hover{
+        background-color: $maintext;
+        transition-duration: 0.2s;
+        border-color: $maintext;
+        box-shadow: 3px 3px 10px 0px #090c16bf;
+        color: $title;
+    }
 }
 
 //-----------section_first-----------
@@ -142,6 +157,13 @@ button {
         border: 2px solid #091133;
         box-sizing: border-box;
         margin-left: 30px;
+        &:hover{
+        background-color: $maintext;
+        transition-duration: 0.2s;
+        border-color: $maintext;
+        box-shadow: 3px 3px 10px 0px #090c16bf;
+        color: $title;
+        }
     }
 }
 
@@ -196,7 +218,6 @@ button {
             font-size: 12px;
             line-height: 18px;
             color: $grey;
-
         }
 
         &_item:not(:last-child) {
@@ -209,7 +230,7 @@ button {
 //-----------section_third-----------
 
 .section_third {
-    margin-bottom: 20%;
+    margin-bottom: 15%;
 
     .text {
         width: 40%;
@@ -225,20 +246,19 @@ button {
 //-----------section_fourth-----------
 
 .section_fourth {
-    background: url(images/footer.png);
-    background-repeat: no-repeat;
+    position: relative;
+    display: flex;
+    overflow: hidden;
 
     .text {
-        margin: 0 auto;
+        margin: 20% auto 15% auto;
         text-align: center;
-        margin-bottom: 20%;
         width: 45%;
 
         .kit {
             color: #37447E;
             margin: 0 0 60px 0;
         }
-
     }
 
     .price {
@@ -261,6 +281,12 @@ button {
 
 }
 
+.footer_img {
+    position: absolute;
+    top: 10%;
+    z-index: -1;
+}
+
 //-----------footer-----------
 .footer {
     padding-top: 60px;
@@ -278,12 +304,7 @@ button {
             line-height: 24px;
             color: #939EA4;
         }
-        // &::after{
-        //     background: #CDD1D4;
-        //     width: 1px;
-        //     height: 2px;
-        //     border-bottom: 2px solid green; }
-     
+
     }
 
     button {
@@ -294,34 +315,47 @@ button {
         padding: 0;
     }
 
-    .footer_botoom{
+    .footer_botoom {
         display: flex;
         justify-content: space-between;
         padding-bottom: 30px;
         padding-top: 20px;
-        .nav{
+
+        .nav {
             li>a {
                 color: $unactive;
                 ;
+            &:hover{
+                color:$title;
+                transition-duration: 0.2s;
+            }
             }
         }
 
-        
-        .social_links{
+
+        .social_links {
             display: flex;
             justify-content: end;
             align-items: center;
-            a:not(:last-child){
+
+            a:not(:last-child) {
                 margin-right: 30px;
             }
-            
+            path:hover{
+                fill: $title;
+                transition-duration: 0.2s;
+            }
+        
         }
     }
 }
 
-.line{
+
+
+
+
+.line {
     background: #CDD1D4;
     width: 100%;
     height: 1px;
 }
-    
