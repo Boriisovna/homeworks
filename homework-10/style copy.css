@@ -1,0 +1,322 @@
+* {
+    margin: 0px;
+}
+
+.block {
+    display: flex;
+    width: 100%;
+    min-height: 600px;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+.animation_star-wars {
+    background-color: rgba(102, 102, 102, 0.671);
+    width: 50%;
+    height: 625px;
+}
+
+.swords {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    align-self: center;
+    height: 100%;
+}
+
+
+.swords .sword {
+    display: block;
+    width: 180px;
+    height: 5px;
+    background: linear-gradient(to right, #ffffff 25px, #010101 25px, #000000 45px, #ffffff 45px);
+    border: 1px solid white;
+    margin-bottom: 30px;
+    /* transition-duration: 0.5s;
+    transition-delay: 0.3s; */
+}
+
+/* .sword:nth-child(2) {
+    transform: rotate(180deg);
+} */
+
+
+ /* .swords:active .sword:nth-child(2) {
+    transform: rotate(227deg);
+    display: block;
+    transition-duration: 1s;
+    box-shadow: none; 
+    filter: drop-shadow(0px 0px 0px steelblue);
+    transition: filter 2s ease 2s;
+
+}
+
+.swords:active .sword:nth-child(3){
+    transform: rotate(-45deg);
+    transition-duration: 1s;
+    margin-top: -34px;
+    display: block;
+    filter: drop-shadow(0px 0px 0px steelblue);
+    transition: filter 2s ease 2s;
+
+}  */
+
+
+
+.second, .third {
+        transition: all 0s 9999999s;
+    }
+
+div:active ~ .second{
+        transition: all 0s;
+        transform: rotate(227deg);
+        display: block;
+        /* transition-duration: 1s; */
+    }
+p:active ~ .third {
+        transition: all 0s;
+        transform: rotate(-45deg);
+        display: block;
+        /* transition-duration: 1s; */
+        /* margin-top: -34px; */
+    }
+    
+
+
+/* .swords:active .sword:nth-child(2) {
+    transform: rotate(227deg);
+    transition-duration: 1s;
+    box-shadow: none;
+}
+
+.swords:active .sword:nth-child(3){
+    transform: rotate(45deg);
+    transition-duration: 1s;
+    margin-top: 30px;
+    box-shadow: none;
+} */
+
+.swords:active::before {
+    transform: rotate(0deg);
+    background: linear-gradient(to right, #ffffff 25px, #010101 25px, #000000 45px, #ffffff 45px);
+    border: 1px solid white;
+    display: block;
+    margin-bottom: 7px;
+    transition-delay: 10s;
+    transition-duration: 1s;
+
+}
+
+.swords:active:nth-child(1)::before {
+    transition-delay: 10s;
+    transition-duration: 1s;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* .sword:last-child {
+    transform: rotate(-45deg);
+} */
+
+
+/* .swords:nth-child(1)::before {
+    content: '';
+    display: block;
+    width: 180px;
+    height: 5px;
+    background-color: transparent;
+    display: block;
+    transition-delay: 1s;
+    transition-duration: 1s;
+    
+} */
+
+
+
+
+/* .swords:hover .sword:first-child {
+    cursor: pointer;
+    box-shadow: 0em -1px 19px 7px #ff5454;
+    transition-duration: 1s;
+}
+
+.swords:hover .sword:last-child {
+    cursor: pointer;
+    box-shadow: 0em -1px 19px 7px #28c851;
+    transition-duration: 1s;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ----------------------circles--------------------- */
+.animation_circle {
+    background-color: rgba(94, 92, 92, 0.541);
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    height: 625px;
+}
+
+.circles {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.circle {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+    box-shadow: 1px 16px 10px 1px rgb(31 31 31 / 22%);
+    cursor: pointer;
+}
+
+.circle:nth-child(1) {
+    background: linear-gradient(rgb(255 21 224), #df67c6);
+
+
+}
+
+.circle:nth-child(2) {
+    background: linear-gradient(rgb(248, 142, 234), #f143ed);
+}
+
+.circle:nth-child(3) {
+    background: linear-gradient(rgb(244 72 221), #92b5ff);
+}
+
+.circle:nth-child(4) {
+    background: linear-gradient(rgb(255 159 242), #598ffe);
+}
+
+.circle:nth-child(5) {
+    background: linear-gradient(rgb(254 178 244), #296df9);
+}
+
+.circle:nth-child(6) {
+    background: linear-gradient(rgb(227 125 254), #1c62f3);
+}
+
+.circle:nth-child(7) {
+    background: linear-gradient(rgb(137 104 242), #276eff);
+}
+
+
+@keyframes first {
+    10% {
+        top: -25px;
+        left: -45px
+    }
+
+    25% {
+        top: -120px;
+        left: -70px;
+    }
+
+    35% {
+        top: -30px;
+        left: -35px
+    }
+
+    40% {
+        top: -15px;
+        left: -25px
+    }
+
+    50% {
+        top: 0;
+        left: 0;
+    }
+
+    70% {
+        top: 0;
+        left: 0;
+    }
+
+    100% {
+        top: 0;
+        left: 0;
+    }
+}
+
+@keyframes last {
+    10% {
+        top: -25px;
+        left: 45px
+    }
+
+    25% {
+        top: -120px;
+        left: 70px;
+    }
+
+    35% {
+        top: -30px;
+        left: 35px
+    }
+
+    40% {
+        top: -15px;
+        left: 25px
+    }
+
+    50% {
+        top: 0;
+        left: 0;
+    }
+
+    70% {
+        top: 0;
+        left: 0;
+    }
+
+    100% {
+        top: 0;
+        left: 0;
+    }
+}
+
+.circles:hover .circle:nth-child(1) {
+    position: relative;
+    animation-name: first;
+    animation-duration: 0.8s;
+    animation-iteration-count: infinite;
+    transition-timing-function: linear;
+    animation-delay: 0;
+    animation-fill-mode: both;
+}
+
+.circles:hover .circle:nth-child(7) {
+    position: relative;
+    animation-name: last;
+    animation-duration: 0.8s;
+    animation-iteration-count: infinite;
+    transition-timing-function: linear;
+    animation-delay: 0.3s;
+    animation-fill-mode: forwards;
+}

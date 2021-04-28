@@ -70,7 +70,7 @@ header {
         margin-right: 15%;
 
         @include breakpoint(lg) {
-            margin-right: 0%;
+            margin:auto 6px ;
 
         }
     }
@@ -179,7 +179,8 @@ button {
         margin-top: 70px;
 
         @include breakpoint(lg) {
-            margin: 30px auto 0 auto;
+            margin: 30px 20px 0 40px;
+    
         }
     }
 
@@ -348,17 +349,20 @@ button {
 //-----------section_fourth-----------
 
 .section_fourth {
-    position: relative;
     display: flex;
-    overflow: hidden;
-
+    background-image: url(https://raw.githubusercontent.com/ViktoriiaBabiuk/homeworks/15eb6030814d7b4397a2efdce58f17986a9d2660/homework-11/images/Rectangle.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    position: relative;
+    top:73px;
     .text {
-        margin: 20% auto 15% auto;
+        margin: 17% auto 15% auto;
         text-align: center;
         width: 45%;
 
         @include breakpoint(lg) {
-            margin: 10% auto 10% auto;
+            margin: 10% auto 20% auto;
             text-align: center;
             width: 50%;
         }
@@ -397,6 +401,7 @@ button {
             font-weight: 100;
             padding: 5px 10px;
             line-height: 14px;
+            margin-bottom: 50px;
         }
     }
 
@@ -414,10 +419,8 @@ button {
 
 //-----------footer-----------
 .footer {
-    padding-top: 60px;
+    padding-top: 65px;
     background-color: #E7ECFF;
-    ;
-
     &_top {
         display: flex;
         justify-content: space-between;
