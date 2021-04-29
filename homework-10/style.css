@@ -24,6 +24,8 @@
     flex-direction: column;
     align-self: center;
     height: 100%;
+    position: absolute;
+    width: 50%;
 }
 
 
@@ -33,88 +35,44 @@
     height: 5px;
     background: linear-gradient(to right, #ffffff 25px, #010101 25px, #000000 45px, #ffffff 45px);
     border: 1px solid white;
-    margin-bottom: 10px;
-    transition-duration: 0.5s;
-    transition-delay: 0.3s;
-}
-
-.sword:first-child {
-    transform: rotate(225deg);
+    transition-duration: 1s;
+    transition-delay: 0.1s;
     position: relative;
-    top: 17px;
 }
-
-.sword:last-child {
-    transform: rotate(-45deg);
+.sword:nth-child(1) {
+     bottom: 20px;
 }
-
-
-.swords:nth-child(1)::before {
-    content: '';
+.sword:nth-child(2) {
+    transform: rotate(180deg);
+}
+.sword:nth-child(3) {
+    top: 20px;
+}
+.swords:active .sword:nth-child(1),
+.swords:active .sword:nth-child(2),
+.swords:active .sword:nth-child(3){
     display: block;
-    width: 180px;
-    height: 5px;
-    background-color: transparent;
-    display: block;
-    transition-delay: 1s;
-    transition-duration: 1s;
-    
-}
-
-
-
-
-.swords:hover .sword:first-child {
+    transition-duration: 2s;
     cursor: pointer;
+} 
+
+
+.swords:active .sword:nth-child(1){
+     opacity: 0;
+      transform: translateY(-100px); 
+
+} 
+ .swords:active .sword:nth-child(2) {
+    transform: rotate(227deg);
     box-shadow: 0em -1px 19px 7px #ff5454;
-    transition-duration: 1s;
+    bottom: 10px;
 }
 
-.swords:hover .sword:last-child {
-    cursor: pointer;
+.swords:active .sword:nth-child(3){
+    transform: rotate(-45deg);
+    margin-top: -34px;
     box-shadow: 0em -1px 19px 7px #28c851;
-    transition-duration: 1s;
-}
-
-
-.swords:active .sword:first-child {
-    transform: rotate(179deg);
-    transition-duration: 1s;
-    box-shadow: none;
-}
-
-.swords:active .sword:last-child {
-    transform: rotate(0deg);
-    transition-duration: 1s;
-    margin-top: 30px;
-    box-shadow: none;
-}
-
-.swords:active::before {
-    transform: rotate(0deg);
-    background: linear-gradient(to right, #ffffff 25px, #010101 25px, #000000 45px, #ffffff 45px);
-    border: 1px solid white;
-    display: block;
-    margin-bottom: 7px;
-    transition-delay: 10s;
-    transition-duration: 1s;
-
-}
-
-.swords:active:nth-child(1)::before {
-    transition-delay: 10s;
-    transition-duration: 1s;
-}
-
-
-
-
-
-
-
-
-
-
+} 
 
 
 /* ----------------------circles--------------------- */
@@ -174,6 +132,10 @@
 
 
 @keyframes first {
+    0% {
+        top: 0px;
+        left:0px
+    }
     10% {
         top: -25px;
         left: -45px
@@ -211,6 +173,11 @@
 }
 
 @keyframes last {
+    0% {
+        top: 0px;
+        left:0px
+    }
+
     10% {
         top: -25px;
         left: 45px
@@ -250,17 +217,17 @@
 .circles:hover .circle:nth-child(1) {
     position: relative;
     animation-name: first;
-    animation-duration: 0.8s;
+    animation-duration: 1.1s;
     animation-iteration-count: infinite;
     transition-timing-function: linear;
     animation-delay: 0;
-    animation-fill-mode: both;
+    /* animation-fill-mode: both; */
 }
 
 .circles:hover .circle:nth-child(7) {
     position: relative;
     animation-name: last;
-    animation-duration: 0.8s;
+    animation-duration: 1.1s;
     animation-iteration-count: infinite;
     transition-timing-function: linear;
     animation-delay: 0.3s;
