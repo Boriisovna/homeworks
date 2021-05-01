@@ -150,9 +150,11 @@ button {
 /* --------------------second block -----------------------------*/
 
 .football-experience {
-    background: linear-gradient(270deg, #FFFFFF 50%, rgba(255, 255, 255, 0) 80.14%), rgba(255, 255, 255, 0.4) url(images/second.png) no-repeat left bottom;
+    background: linear-gradient(270deg, #FFFFFF 55%, rgba(255, 255, 255, 0) 80.14%), rgba(255, 255, 255, 0.4) url(images/second.png) no-repeat left;
     background-size: contain;
     width: 100%;
+    min-height:600px;
+    display: flex;
 
 }
 
