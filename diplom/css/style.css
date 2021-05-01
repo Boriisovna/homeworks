@@ -1,0 +1,20 @@
+.wrapper_header {
+  background-image: url(/diplom/images/header.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 700px;
+}
+
+.navbar {
+  padding: 0;
+}
+
+.navbar-light .navbar-brand {
+  margin: 0 0 0 120px;
+}
+
+.navbar-expand-lg .navbar-collapse {
+  margin-left: 20%;
+}
+/*# sourceMappingURL=style.css.map */

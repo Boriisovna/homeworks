@@ -1,0 +1,31 @@
+$red:rgb(12, 209, 101);
+// h1{
+//     color:$red;
+// }
+
+.wrapper_header{
+    background-image: url(/diplom/images/header.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 700px;
+
+
+}
+// .wrapper{
+// width: 1180px;
+// margin: 0 auto;
+// // padding: 0 10px;
+// }
+
+.navbar{
+    padding: 0;
+}
+
+// .navbar-light .navbar-nav .nav-link{color:$red;}
+.navbar-light .navbar-brand{
+    margin: 0 0 0 120px;
+}
+.navbar-expand-lg .navbar-collapse{
+    margin-left: 20%;
+}
