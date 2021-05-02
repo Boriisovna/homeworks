@@ -1,31 +1,479 @@
-$red:rgb(12, 209, 101);
-// h1{
-//     color:$red;
-// }
+$activ:#FFFFFF;
+$disactiv:#C7C7C7;
 
-.wrapper_header{
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+    color: #FFFFFF;
+    background: #010101;
+}
+
+.wrapper {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+// -----------------------header------------------------
+
+
+.wrapper_header {
     background-image: url(/diplom/images/header.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 700px;
+    display: flex;
+    flex-direction: column;
 
+    .navbar {
+        padding: 0;
+        background: linear-gradient(180deg, #010101 -17.5%, rgba(1, 1, 1, 0) 100%);
+    }
+
+    .navbar-light .navbar-nav .nav-link.active {
+        color: $activ;
+        font-weight: 600;
+    }
+
+    .navbar-light .navbar-nav .nav-link {
+        color: $disactiv;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 32px;
+        text-transform: uppercase;
+    }
+
+    .navbar-light .navbar-brand {
+        margin: 0 0 0 120px;
+    }
+
+    .navbar-expand-lg .navbar-collapse {
+        margin-left: 35vw;
+        margin-right: 100px;
+    }
+}
+
+@media (max-width:1230px) {
+    .wrapper_header .navbar-expand-lg .navbar-collapse {
+        margin-left: 25vw;
+        margin-right: 100px;
+    }
 
 }
-// .wrapper{
-// width: 1180px;
-// margin: 0 auto;
-// // padding: 0 10px;
-// }
 
-.navbar{
+.about_project {
+    display: flex;
+    align-items: center;
+    align-self: center;
+    margin-top: 170px;
+    flex-direction: column;
+    padding: 0 10px;
+
+    .about_project_title {
+        font-family: 'Oswald';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 64px;
+        line-height: 64px;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        margin-bottom: 16px;
+        flex-wrap: wrap;
+        align-self: center;
+    }
+
+    .about_project_text {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 26px;
+        text-align: center;
+        font-style: normal;
+        width: 50%;
+        margin-bottom: 2rem;
+    }
+
+    .about_project_button button {
+        border: none;
+        background: #FFFFFF;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 24px;
+        text-transform: capitalize;
+        color: #010101;
+        padding: 16px;
+    }
+
+    .arrow img {
+        align-items: center;
+        margin-top: 128px;
+        margin-bottom: 110px;
+    }
+}
+
+.aside {
+    display: flex;
+    position: absolute;
+    bottom: 35%;
+    right: -80px;
+    transform: rotate(-90deg);
+
+    &_networks {
+        display: inline-flex;
+
+        &_item {
+            font-family: Oswald;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 12px;
+            line-height: 20px;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+            background: #010101;
+            padding: 6px;
+
+            &:not(:last child) {
+                margin-right: 2px;
+            }
+        }
+    }
+}
+
+// -------------------main-------------------------
+
+// -----statistics----
+.statistics {
+    &_block {
+        position: relative;
+    }
+
+    &_text {
+        display: flex;
+        margin: 0 auto;
+        justify-content: space-between;
+        padding: 125px 20px;
+        flex-wrap: wrap;
+    }
+
+    &_shadow {
+        font-family: 'Oswald';
+        font-style: normal;
+        font-weight: bold;
+        font-size: 48px;
+        line-height: 64px;
+        text-align: right;
+        text-transform: uppercase;
+        color: #1E1E1E;
+        opacity: 0.7;
+    }
+
+    &_number {
+        font-family: 'Oswald';
+        font-style: normal;
+        font-weight: bold;
+        font-size: 68px;
+        line-height: 76px;
+        z-index: 2;
+        margin-right: 10px;
+
+    }
+
+    &_title {
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 28px;
+        line-height: 33px;
+        z-index: 2;
+        text-transform: uppercase;
+
+    }
+}
+
+.two {
+    position: absolute;
+    bottom: -40px;
+    left: -20px
+}
+
+.statistics_project {
+    justify-content: center;
+    align-self: center;
+    align-items: center;
+
+}
+
+.statistics_filming {
+    justify-content: center;
+    align-self: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+
+    .two {
+        bottom: -70px;
+        left: -70px
+    }
+
+    .statistics_title {
+        display: flex;
+        position: absolute;
+        bottom: 30px;
+        left: 95px;
+        justify-content: flex-start;
+        margin-left: 17px;
+
+    }
+
+    .statistics_number {
+        position: absolute;
+        bottom: 29px;
+        left: -4px;
+
+    }
+}
+
+.statistics_brand {
+    justify-content: center;
+    align-self: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+
+    .two {
+        left: -45px
+    }
+
+}
+
+.statistics_view {
+    justify-content: center;
+    align-self: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+
+    .two {
+        position: absolute;
+        bottom: -40px;
+        left: -60px;
+    }
+}
+
+@media(max-width:1120px) {
+    .statistics_text {
+        flex-wrap: wrap;
+        margin: 0 30px;
+
+        .statistics_view .two {
+            margin-left: 40px;
+
+        }
+
+        .statistics_shadow {
+            margin-top: 50px;
+        }
+    }
+}
+
+.statistics_photo {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 121px;
+    flex-wrap: wrap;
+
+    &_block {
+        position: relative;
+    }
+
+}
+
+.photo_title {
+    position: absolute;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 64px;
+    bottom: 10px;
+    left: 50%;
+    transform: translate(-50%);
+    // z-index: 2;
+
+}
+
+.history {
+    display: flex;
+    margin-bottom: 120px;
+
+    &_text {
+        // width: 200%;
+        // z-index: 1;
+    }
+
+    .title {
+        font-family: Oswald;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 28px;
+        line-height: 34px;
+        text-transform: uppercase;
+        margin-top: 10px;
+    }
+
+    .paragraph {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 26px;
+        margin-top: 32px;
+
+
+    }
+
+    &_pictures {
+        width: 50%;
+
+    }
+
+}
+
+.history_pictures::before {
+    content: '';
+    background: linear-gradient(271.02deg, rgba(0, 0, 0, 0), rgb(0, 0, 0, ));
+    filter: blur(50px);
+    height: 100%;
+    width: 10%;
+    position: absolute;
+    filter: blur(1px);
+}
+
+// -----------gallery----------------
+
+
+.photo_block {
+    display: flex;
+
+    &_title {
+        font-family: 'Oswald';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 32px;
+        line-height: 34px;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    &_title::after {
+        content: "";
+        width: 60%;
+        height: 1px;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 16px auto;
+        color: white;
+    }
+
+    &-big {
+        background: url(/diplom/images/block1.png), rgba(0, 0, 0, 0.8);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        min-height: 551px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        // opacity: 0.8;
+        margin: 2px;
+
+        .photo_block_button button {
+            font-family: Raleway;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 24px;
+            text-transform: capitalize;
+            color: #010101;
+            background: #FFFFFF;
+            border: none;
+            padding: 12px;
+        }
+    }
+
+    .photo-smaller_cloud {
+        background: url(/diplom/images/block1.1.png);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        min-height: 274px;
+        margin-bottom: 2px;
+    }
+
+    .photo-smaller_rafting {
+        background: url(/diplom/images/block1.2.png);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        min-height: 277px;
+    }
+
+}
+
+.photo_block {
+
+    .photo-smaller_race {
+        background: url(/diplom/images/block2.1.png);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        min-height: 274px;
+        margin-right: 2px;
+    }
+
+    .photo-smaller_suv {
+        background: url(/diplom/images/block2.2.png);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        min-height: 274px;
+        margin-right: 2px;
+    }
+
+    .photo-smaller_sunset {
+        background: url(/diplom/images/block2.3.png);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        min-height: 274px;
+    }
+
+}
+
+.photo_block-bottom {
+    margin-bottom: 40px;
+}
+
+
+.col-12,
+.col-4,
+.col-8 {
     padding: 0;
 }
-
-// .navbar-light .navbar-nav .nav-link{color:$red;}
-.navbar-light .navbar-brand{
-    margin: 0 0 0 120px;
-}
-.navbar-expand-lg .navbar-collapse{
-    margin-left: 20%;
+.button_more button{
+    border: 1px solid #FFFFFF;
+    font-weight: 500;
+font-size: 16px;
+line-height: 24px;
+letter-spacing: 0.03em;
+color: #FFFFFF;
+background-color: black;
+margin: auto;
+align-items: center;
+display: flex;
+padding: 11px 16px;
+margin-bottom: 120px;
 }

@@ -1,20 +1,539 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  overflow-x: hidden;
+  color: #FFFFFF;
+  background: #010101;
+}
+
+.wrapper {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
 .wrapper_header {
   background-image: url(/diplom/images/header.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 700px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
-.navbar {
+.wrapper_header .navbar {
   padding: 0;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(-17.5%, #010101), to(rgba(1, 1, 1, 0)));
+  background: linear-gradient(180deg, #010101 -17.5%, rgba(1, 1, 1, 0) 100%);
 }
 
-.navbar-light .navbar-brand {
+.wrapper_header .navbar-light .navbar-nav .nav-link.active {
+  color: #FFFFFF;
+  font-weight: 600;
+}
+
+.wrapper_header .navbar-light .navbar-nav .nav-link {
+  color: #C7C7C7;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 32px;
+  text-transform: uppercase;
+}
+
+.wrapper_header .navbar-light .navbar-brand {
   margin: 0 0 0 120px;
 }
 
-.navbar-expand-lg .navbar-collapse {
-  margin-left: 20%;
+.wrapper_header .navbar-expand-lg .navbar-collapse {
+  margin-left: 35vw;
+  margin-right: 100px;
+}
+
+@media (max-width: 1230px) {
+  .wrapper_header .navbar-expand-lg .navbar-collapse {
+    margin-left: 25vw;
+    margin-right: 100px;
+  }
+}
+
+.about_project {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-item-align: center;
+      align-self: center;
+  margin-top: 170px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0 10px;
+}
+
+.about_project .about_project_title {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 64px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.about_project .about_project_text {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 26px;
+  text-align: center;
+  font-style: normal;
+  width: 50%;
+  margin-bottom: 2rem;
+}
+
+.about_project .about_project_button button {
+  border: none;
+  background: #FFFFFF;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+  text-transform: capitalize;
+  color: #010101;
+  padding: 16px;
+}
+
+.about_project .arrow img {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 128px;
+  margin-bottom: 110px;
+}
+
+.aside {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  bottom: 35%;
+  right: -80px;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+}
+
+.aside_networks {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.aside_networks_item {
+  font-family: Oswald;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 20px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  background: #010101;
+  padding: 6px;
+}
+
+.aside_networks_item {
+  margin-right: 2px;
+}
+
+.statistics_block {
+  position: relative;
+}
+
+.statistics_text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 125px 20px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.statistics_shadow {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 64px;
+  text-align: right;
+  text-transform: uppercase;
+  color: #1E1E1E;
+  opacity: 0.7;
+}
+
+.statistics_number {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 68px;
+  line-height: 76px;
+  z-index: 2;
+  margin-right: 10px;
+}
+
+.statistics_title {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 33px;
+  z-index: 2;
+  text-transform: uppercase;
+}
+
+.two {
+  position: absolute;
+  bottom: -40px;
+  left: -20px;
+}
+
+.statistics_project {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.statistics_filming {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-item-align: center;
+      align-self: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 50px;
+}
+
+.statistics_filming .two {
+  bottom: -70px;
+  left: -70px;
+}
+
+.statistics_filming .statistics_title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  bottom: 30px;
+  left: 95px;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin-left: 17px;
+}
+
+.statistics_filming .statistics_number {
+  position: absolute;
+  bottom: 29px;
+  left: -4px;
+}
+
+.statistics_brand {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-item-align: center;
+      align-self: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.statistics_brand .two {
+  left: -45px;
+}
+
+.statistics_view {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-item-align: center;
+      align-self: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.statistics_view .two {
+  position: absolute;
+  bottom: -40px;
+  left: -60px;
+}
+
+@media (max-width: 1120px) {
+  .statistics_text {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: 0 30px;
+  }
+  .statistics_text .statistics_view .two {
+    margin-left: 40px;
+  }
+  .statistics_text .statistics_shadow {
+    margin-top: 50px;
+  }
+}
+
+.statistics_photo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 121px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.statistics_photo_block {
+  position: relative;
+}
+
+.photo_title {
+  position: absolute;
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 64px;
+  bottom: 10px;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+}
+
+.history {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 120px;
+}
+
+.history .title {
+  font-family: Oswald;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 28px;
+  line-height: 34px;
+  text-transform: uppercase;
+  margin-top: 10px;
+}
+
+.history .paragraph {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  margin-top: 32px;
+}
+
+.history_pictures {
+  width: 50%;
+}
+
+.history_pictures::before {
+  content: '';
+  background: linear-gradient(271.02deg, rgba(0, 0, 0, 0), black);
+  -webkit-filter: blur(50px);
+          filter: blur(50px);
+  height: 100%;
+  width: 10%;
+  position: absolute;
+  -webkit-filter: blur(1px);
+          filter: blur(1px);
+}
+
+.photo_block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.photo_block_title {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 32px;
+  line-height: 34px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.photo_block_title::after {
+  content: "";
+  width: 60%;
+  height: 1px;
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 16px auto;
+  color: white;
+}
+
+.photo_block-big {
+  background: url(/diplom/images/block1.png), rgba(0, 0, 0, 0.8);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 551px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 2px;
+}
+
+.photo_block-big .photo_block_button button {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  text-transform: capitalize;
+  color: #010101;
+  background: #FFFFFF;
+  border: none;
+  padding: 12px;
+}
+
+.photo_block .photo-smaller_cloud {
+  background: url(/diplom/images/block1.1.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 274px;
+  margin-bottom: 2px;
+}
+
+.photo_block .photo-smaller_rafting {
+  background: url(/diplom/images/block1.2.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 277px;
+}
+
+.photo_block .photo-smaller_race {
+  background: url(/diplom/images/block2.1.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 274px;
+  margin-right: 2px;
+}
+
+.photo_block .photo-smaller_suv {
+  background: url(/diplom/images/block2.2.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 274px;
+  margin-right: 2px;
+}
+
+.photo_block .photo-smaller_sunset {
+  background: url(/diplom/images/block2.3.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 274px;
+}
+
+.photo_block-bottom {
+  margin-bottom: 40px;
+}
+
+.col-12,
+.col-4,
+.col-8 {
+  padding: 0;
+}
+
+.button_more button {
+  border: 1px solid #FFFFFF;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: #FFFFFF;
+  background-color: black;
+  margin: auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 11px 16px;
+  margin-bottom: 120px;
 }
 /*# sourceMappingURL=style.css.map */
