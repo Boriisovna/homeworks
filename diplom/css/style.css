@@ -3,6 +3,7 @@ body {
   overflow-x: hidden;
   color: #FFFFFF;
   background: #010101;
+  min-width: 375px;
 }
 
 .wrapper {
@@ -157,6 +158,86 @@ body {
 
 .aside_networks_item {
   margin-right: 2px;
+}
+
+.navbar-light .navbar-toggler-icon {
+  background-image: url(/diplom/images/nav.svg);
+}
+
+.navbar-light .navbar-toggler {
+  border: none;
+}
+
+@media (max-width: 920px) {
+  header {
+    margin-top: 10%;
+  }
+  .about_project {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-item-align: center;
+        align-self: center;
+    margin-top: 170px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 0 10px;
+  }
+  .about_project .about_project_title {
+    font-size: 40px;
+    line-height: 50px;
+    margin-bottom: 16px;
+    text-align: center;
+  }
+  .about_project .about_project_text {
+    font-size: 14px;
+    line-height: 20px;
+    width: 50%;
+  }
+}
+
+@media (max-width: 500px) {
+  .wrapper_header {
+    background-image: url(/diplom/images/1.png);
+  }
+  header {
+    margin-top: 30%;
+  }
+  .wrapper_header .navbar-light .navbar-brand {
+    margin-left: 16px;
+  }
+  .about_project .about_project_title {
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  .about_project_text {
+    display: none;
+  }
+  .aside {
+    display: none;
+  }
+  .about_project .about_project_button button {
+    margin-left: -100px;
+    background: transparent;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: capitalize;
+    color: white;
+    padding: 12px;
+    border: 1px solid #FFFFFF;
+  }
+  .about_project_button {
+    margin-left: 100px;
+  }
+  .arrow {
+    padding-top: 250px;
+  }
 }
 
 .statistics_block {
@@ -339,6 +420,9 @@ body {
   margin-bottom: 121px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .statistics_photo_block {
@@ -366,6 +450,71 @@ body {
   line-height: 34px;
   text-transform: uppercase;
   margin-top: 10px;
+}
+
+@media (max-width: 720px) {
+  .statistics_photo {
+    margin-bottom: 56px;
+  }
+  .statistics_photo_block {
+    padding-top: 10px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 600px) {
+  .statistics_text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0 auto;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 125px 20px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .statistics_shadow {
+    font-size: 32px;
+    line-height: 36px;
+  }
+  .statistics_number {
+    font-size: 44px;
+    line-height: 50px;
+  }
+  .statistics_title {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .statistics .statistics_brand .two {
+    left: 10px;
+  }
+  .statistics .statistics_filming .statistics_title {
+    left: 80px;
+  }
+  .statistics .statistics_filming .statistics_number {
+    left: 20px;
+  }
+}
+
+@media (max-width: 500px) {
+  .statistics_text {
+    padding: 46px 20px 110px 20px;
+    -ms-flex-line-pack: justify;
+        align-content: space-between;
+  }
+  .statistics_text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0 auto;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
 }
 
 .history {
@@ -397,6 +546,17 @@ body {
   position: absolute;
   -webkit-filter: blur(1px);
           filter: blur(1px);
+}
+
+@media (max-width: 860px) {
+  .history_text {
+    z-index: 1;
+    position: absolute;
+  }
+  .history_pictures {
+    width: 100%;
+    overflow-x: hidden;
+  }
 }
 
 .gallery {
