@@ -156,7 +156,8 @@ body {
             background: #010101;
             padding: 6px;
             cursor: pointer;
-            &:hover{
+
+            &:hover {
                 background-color: #4d5559d1;
                 transition-duration: 0.4s;
                 color: #000000;
@@ -252,9 +253,9 @@ body {
         margin-left: 100px;
     }
 
-    .arrow{
+    .arrow {
         padding-top: 250px;
-        
+
     }
 
 }
@@ -805,7 +806,8 @@ body {
         margin-bottom: 67px;
         align-content: space-between;
         align-items: center;
-        .arrows{
+
+        .arrows {
             cursor: pointer;
         }
     }
@@ -1131,6 +1133,7 @@ footer {
             line-height: 32px;
             text-transform: uppercase;
             color: #C7C7C7;
+
             &:hover {
                 transition-duration: 0.3s;
                 color: #738e9ca3;
@@ -1174,7 +1177,8 @@ footer {
             color: #FFFFFF;
         }
     }
-    .networks_item path:hover{
+
+    .networks_item path:hover {
         transition-duration: 0.1s;
         fill: #054663;
         cursor: pointer;
