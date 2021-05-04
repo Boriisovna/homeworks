@@ -148,8 +148,10 @@ body {
 .navbar-light .navbar-toggler-icon {
     background-image: url(/diplom/images/nav.svg);
 }
+
 .navbar-light .navbar-toggler {
-    border:none;}
+    border: none;
+}
 
 
 @media (max-width:920px) {
@@ -184,7 +186,9 @@ body {
 
 @media (max-width:500px) {
     .wrapper_header {
-        background-image: url(/diplom/images/1.png)}
+        background-image: url(/diplom/images/1.png)
+    }
+
     header {
         margin-top: 30%;
     }
@@ -217,12 +221,14 @@ body {
         color: white;
         padding: 12px;
         border: 1px solid #FFFFFF;
-        
+
     }
-    .about_project_button{
+
+    .about_project_button {
         margin-left: 100px;
     }
-    .arrow{
+
+    .arrow {
         padding-top: 250px;
     }
 
@@ -411,78 +417,86 @@ body {
 
 
 
-@media (max-width:720px){
-    .statistics_photo{
-      margin-bottom: 56px;
-   }
-  
-      .statistics_photo_block{
-          padding-top: 10px;
-          margin: 0 auto;
-      }
-  }
-  
-  @media (max-width:600px) {
-      
-      .statistics {
-      
-          &_text {
-              display: flex;
-              margin: 0 auto;
-              justify-content: space-between;
-              padding: 125px 20px;
-              flex-wrap: wrap;
-          }
-      
-          &_shadow {
-              font-size: 32px;
-              line-height: 36px;
-  
-          }
-      
-          &_number {
-              font-size: 44px;
-              line-height: 50px;
-      
-          }
-      
-          &_title {
-              font-size: 16px;
-              line-height: 20px;
-          }
-          .statistics_brand .two  {
-              left: 10px;
-              // margin-left: 100px;
-          }
-          .statistics_filming .statistics_title {
-              left: 80px;
-  
-          }
-          .statistics_filming .statistics_number {
-              left: 20px;
-          }
-      }
-  }
-  
-  @media (max-width:500px) {
-      .statistics_text{
-          padding: 46px 20px 110px 20px;
-          align-content: space-between;
-          // min-height: 300px;
-      }
-      .statistics {
-      
-          &_text {
-              display: flex;
-              margin: 0 auto;
-              justify-content: space-between;
-              flex-wrap: wrap;
-          }
-      
-  
-      }
-  }
+@media (max-width:720px) {
+    .statistics_photo {
+        margin-bottom: 56px;
+    }
 
+    .statistics_photo_block {
+        padding-top: 10px;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width:600px) {
+
+    .statistics {
+
+        &_text {
+            display: flex;
+            margin: 0 auto;
+            justify-content: space-between;
+            padding: 125px 20px;
+            flex-wrap: wrap;
+        }
+
+        &_shadow {
+            font-size: 32px;
+            line-height: 36px;
+
+        }
+
+        &_number {
+            font-size: 44px;
+            line-height: 50px;
+
+        }
+
+        &_title {
+            font-size: 16px;
+            line-height: 20px;
+        }
+
+        .statistics_brand .two {
+            left: 10px;
+            // margin-left: 100px;
+        }
+
+        .statistics_filming .statistics_title {
+            left: 80px;
+
+        }
+
+        .statistics_filming .statistics_number {
+            left: 20px;
+        }
+    }
+}
+
+@media (max-width:500px) {
+    .statistics_text {
+        padding: 46px 20px 110px 20px;
+        align-content: space-between;
+        // min-height: 300px;
+    }
+
+    .statistics {
+
+        &_text {
+            display: flex;
+            margin: 0 auto;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+
+    }
+}
+@media (max-width:482px){
+    .statistics .statistics_brand .two{
+        left: -10px;
+    }
+}
 
 
 
@@ -524,27 +538,47 @@ body {
 }
 
 
-@media(max-width:860px){
-    .history_text{
-       z-index: 1;
-       position: absolute;
+@media(max-width:860px) {
+    .history {
+        margin-bottom: 56px;
     }
+
+    .history_text {
+        z-index: 1;
+        position: absolute;
+    }
+
     .history_pictures {
         width: 100%;
         overflow-x: hidden;
 
     }
 
+    .title {
+        font-size: 18px;
+    }
+
+    .history .paragraph {
+        font-size: 14px;
+        line-height: 22px;
+        margin-top: 16px;
+    }
+
+
 }
 
 // -----------gallery----------------
 
 .gallery {
-    margin-bottom: 120px;
+    margin-bottom: 80px;
+    display: flex;
+    flex-direction: column;
 }
 
 .photo_block {
-    display: flex;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 3px;
 
     &_title {
         font-family: 'Oswald';
@@ -568,92 +602,69 @@ body {
         color: white;
     }
 
-    &-big {
-        background: url(/diplom/images/block1.png), rgba(0, 0, 0, 0.8);
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
-        min-height: 551px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        // opacity: 0.8;
-        margin: 2px;
 
-        .photo_block_button button {
-            font-family: Raleway;
-            font-style: normal;
-            font-weight: 500;
-            font-size: 14px;
-            line-height: 24px;
-            text-transform: capitalize;
-            color: #010101;
-            background: #FFFFFF;
-            border: none;
-            padding: 12px;
+    .photo_block_button button {
+        font-family: Raleway;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 24px;
+        text-transform: capitalize;
+        color: #010101;
+        background: #FFFFFF;
+        border: none;
+        padding: 12px;
+    }
+
+    .gallery-photo_block:first-child {
+        grid-column-start: span 2;
+        grid-row-start: span 2;
+    }
+
+    .gallery-photo_block {
+        position: relative;
+
+        & img {
+            width: 100%;
         }
+
+        &:first-child {
+            grid-column-start: span 2;
+            grid-row-start: span 2;
+        }
+
+        .gallery__photo-title {
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .gallery__photo-title-hide {
+            display: none;
+
+        }
+
     }
 
-    .photo-smaller_cloud {
-        background: url(/diplom/images/block1.1.png);
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
-        min-height: 274px;
-        margin-bottom: 2px;
-    }
 
-    .photo-smaller_rafting {
-        background: url(/diplom/images/block1.2.png);
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
-        min-height: 277px;
-    }
+    
+}
+
+.gallery .photo_block .gallery-photo_block::before{
+    content: '';
+    background: linear-gradient(360deg, #010101 -16.15%, rgba(1, 1, 1, 0) 104.17%);
+    opacity: 0.8;
+    width: 100%;
+    height: 100%;
+    position: absolute;
 
 }
 
-.photo_block {
-
-    .photo-smaller_race {
-        background: url(/diplom/images/block2.1.png);
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
-        min-height: 274px;
-        margin-right: 2px;
-    }
-
-    .photo-smaller_suv {
-        background: url(/diplom/images/block2.2.png);
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
-        min-height: 274px;
-        margin-right: 2px;
-    }
-
-    .photo-smaller_sunset {
-        background: url(/diplom/images/block2.3.png);
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
-        min-height: 274px;
-    }
-
-}
-
-.photo_block-bottom {
-    margin-bottom: 40px;
-}
-
-
-.col-12,
-.col-4,
-.col-8 {
-    padding: 0;
-}
 
 .button_more button {
     border: 1px solid #FFFFFF;
@@ -663,12 +674,85 @@ body {
     letter-spacing: 0.03em;
     color: #FFFFFF;
     background-color: black;
-    margin: auto;
+    margin: 40px auto;
     align-items: center;
     display: flex;
     padding: 11px 16px;
     // margin-bottom: 120px;
 }
+
+
+
+@media (max-width:800px) {
+    .gallery {
+        padding: 15px;
+        margin-bottom: 36px;
+    }
+
+    .photo_block {
+        display: flex;
+        flex-direction: column;
+        &_title {
+            font-size: 20px;
+            line-height: 28px;
+        }
+    }
+
+    .gallery-photo_block {
+        margin: 12px 0;
+
+        &:nth-child(1) {
+            order: 1;
+            ;
+        }
+
+        &:nth-child(5) {
+            order: 2;
+        }
+
+        &:nth-child(6) {
+            order: 3;
+        }
+
+        &:nth-child(2) {
+            order: 4;
+        }
+
+        &:nth-child(4) {
+            order: 5;
+        }
+
+        &:nth-child(3) {
+            display: none;
+        }
+
+
+
+    }
+
+    .photo_block .gallery-photo_block .gallery__photo-title-hide {
+        display: flex;
+        align-items: center;
+    }
+
+    .button_more button {
+        margin: 20px auto;
+    }
+    .photo_block_title:after {
+        display: none;
+
+    }
+    .photo_block_button{
+        display: none;
+    }
+
+
+
+
+
+}
+
+
 
 // ------------------partner--------------
 .partners {
@@ -679,6 +763,7 @@ body {
         justify-content: space-between;
         margin-bottom: 67px;
         align-content: space-between;
+        align-items: center;
     }
 
     .title {
@@ -712,6 +797,113 @@ body {
         color: white;
     }
 }
+
+@media(max-width:640px) {
+    .partners {
+        padding: 25px 0 41px 0;
+        // &_images{
+        //     height: 250px;
+        // }
+
+        &_title {
+            line-height: 26px;
+            margin-bottom: 35px;
+        }
+    }
+
+    .lenovo,
+    .fujifilm,
+    .SKS,
+    .gopro,
+    .abus,
+    .levitate {
+        display: none;
+    }
+
+    .volvo {
+        order: 4;
+        // width: 54px;
+        // height: 50px;
+    }
+
+    .suzuki {
+        order: 3;
+    }
+
+    .porsche {
+        order: 1;
+    }
+
+    .jaguar {
+        order: 2;
+    }
+
+    .land_Rover {
+        order: 5;
+    }
+
+    .socar {
+        order: 6;
+    }
+
+    .partners .img_item {
+        margin-right: 0px;
+    }
+
+}
+
+@media(max-width:500px) {
+    .partners_images {
+        height: 150px;
+    }
+
+    .volvo {
+        width: 54px;
+        height: 50px;
+    }
+
+    .suzuki {
+        width: 72px;
+        height: 48px;
+    }
+
+    .porsche {
+        width: 95px;
+        height: 50px;
+    }
+
+    .jaguar {
+        width: 108px;
+        height: 42px;
+    }
+
+    .land_Rover {
+        width: 94px;
+        height: 50px;
+    }
+
+    .socar {
+        width: 108px;
+        height: 30px;
+    }
+
+    .partners .img_item {
+        margin-right: 24px;
+    }
+
+    .arrows img {
+        // width: 60px;
+        height: 25px;
+
+
+    }
+
+    .partners_title {
+        flex-wrap: nowrap;
+    }
+
+}
+
 
 // ------------------review-------------------
 .users_reviews {
@@ -774,9 +966,6 @@ body {
                     color: #010101;
                 }
 
-                // .user_name,.user_activity:nth-child(2){
-                //     color: #ffffff; 
-                // }
             }
         }
 
@@ -799,6 +988,38 @@ body {
     padding-bottom: 0;
 }
 
+@media(max-width:800px) {
+
+    .users_reviews .review:nth-child(1),
+    .users_reviews .review:nth-child(3) {
+        display: none;
+    }
+
+    .users_reviews .review {
+        width: 100%;
+
+
+    }
+
+    .users_reviews .review:nth-child(2) {
+        padding: 60px;
+    }
+
+}
+
+@media (max-width:800px){
+    .users_reviews .review:nth-child(2) {
+        padding: 16px 16px 32px 16px ;
+    }
+}
+
+
+
+
+
+
+
+
 // ------------------gradient-------------------
 .gradient {
     background: linear-gradient(180deg, #010101 11.52%, rgba(41, 40, 40, 0.76) 100%);
@@ -814,6 +1035,17 @@ body {
         position: relative;
         top: 50px;
         left: 65px;
+    }
+}
+
+
+@media(max-width:800px) {
+    .gradient .mountains_big {
+        left: 0px;
+    }
+
+    .gradient .mountains_small {
+        left: -45px;
     }
 }
 
@@ -882,5 +1114,21 @@ footer {
             text-transform: uppercase;
             color: #FFFFFF;
         }
+    }
+}
+
+@media(max-width:800px) {
+    footer .navigation_block .navigation {
+        display: none;
+    }
+
+    footer .navigation_block .projekt_name {
+        display: none;
+    }
+
+    footer .navigation_block .social_network {
+        margin: 30px 20% 0 80%;
+        position: relative;
+        padding-right: 20px;
     }
 }
