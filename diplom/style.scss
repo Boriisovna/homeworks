@@ -15,6 +15,10 @@ body {
     padding: 0 10px;
 }
 
+.wrapper_white {
+    background-color: white;
+}
+
 // -----------------------header------------------------
 
 
@@ -53,6 +57,7 @@ body {
         margin-right: 100px;
     }
 }
+
 
 @media (max-width:1230px) {
     .wrapper_header .navbar-expand-lg .navbar-collapse {
@@ -303,6 +308,17 @@ body {
 
 }
 
+.title {
+    font-family: Oswald;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 34px;
+    text-transform: uppercase;
+    margin-top: 10px;
+}
+
+
 .history {
     display: flex;
     margin-bottom: 120px;
@@ -310,16 +326,6 @@ body {
     &_text {
         // width: 200%;
         // z-index: 1;
-    }
-
-    .title {
-        font-family: Oswald;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 28px;
-        line-height: 34px;
-        text-transform: uppercase;
-        margin-top: 10px;
     }
 
     .paragraph {
@@ -351,6 +357,9 @@ body {
 
 // -----------gallery----------------
 
+.gallery {
+    margin-bottom: 120px;
+}
 
 .photo_block {
     display: flex;
@@ -463,17 +472,248 @@ body {
 .col-8 {
     padding: 0;
 }
-.button_more button{
+
+.button_more button {
     border: 1px solid #FFFFFF;
     font-weight: 500;
-font-size: 16px;
-line-height: 24px;
-letter-spacing: 0.03em;
-color: #FFFFFF;
-background-color: black;
-margin: auto;
-align-items: center;
-display: flex;
-padding: 11px 16px;
-margin-bottom: 120px;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+    background-color: black;
+    margin: auto;
+    align-items: center;
+    display: flex;
+    padding: 11px 16px;
+    // margin-bottom: 120px;
 }
+
+// ------------------partner--------------
+.partners {
+    padding: 120px 0;
+
+    &_title {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 67px;
+        align-content: space-between;
+    }
+
+    .title {
+        color: black;
+
+    }
+
+    &_images {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        align-content: space-between;
+        height: 350px;
+
+    }
+
+    .img_item {
+        margin-right: 50px;
+        align-content: space-between;
+    }
+
+    .socar,
+    .levitate {
+        margin-right: 0;
+    }
+}
+
+.partners_reviews {
+    .title {
+        color: white;
+    }
+}
+
+// ------------------review-------------------
+.users_reviews {
+    display: flex;
+    flex: 0 0 33.333333%;
+
+    .review {
+        width: 33.333333%;
+        margin-right: 3px;
+
+        &:nth-child(1) {
+            padding: 32px;
+            background: #C7C7C7;
+        }
+
+        &:nth-child(2) {
+            padding: 24px 32px 26px;
+            background: #1E1E1E;
+
+            .review_text {
+                color: white;
+            }
+
+            .user_name,
+            .user_activity:nth-child(2) {
+                color: #ffffff;
+            }
+
+        }
+
+        &:nth-child(3) {
+            padding: 32px;
+            background: #C7C7C7;
+        }
+
+        &_title {
+            display: flex;
+            margin-bottom: 24px;
+            justify-content: space-between;
+
+            .user_info {
+                margin-right: 20px;
+
+                .user_name {
+                    font-family: 'Oswald', sans-serif;
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 18px;
+                    line-height: 24px;
+                    color: #010101;
+                    margin-bottom: 8px;
+                }
+
+                .user_activity {
+                    font-family: 'Raleway', sans-serif;
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 12px;
+                    line-height: 20px;
+                    color: #010101;
+                }
+
+                // .user_name,.user_activity:nth-child(2){
+                //     color: #ffffff; 
+                // }
+            }
+        }
+
+        &_text {
+            font-family: 'Raleway', sans-serif;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 20px;
+            color: #010101;
+        }
+    }
+}
+
+.users_reviews .review_title .user_info .second_name {
+    color: white;
+}
+
+.partners_reviews {
+    padding-bottom: 0;
+}
+
+// ------------------gradient-------------------
+.gradient {
+    background: linear-gradient(180deg, #010101 11.52%, rgba(41, 40, 40, 0.76) 100%);
+    display: flex;
+
+    .mountains_big {
+        position: relative;
+        top: 50px;
+        left: 110px;
+    }
+
+    .mountains_small {
+        position: relative;
+        top: 50px;
+        left: 65px;
+    }
+}
+
+// ------------------footer-------------------
+footer {
+    margin: 20px auto;
+
+    .navbar-brand {
+        position: absolute;
+    }
+
+    .navigation_block {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .navigation {
+            display: flex;
+            justify-content: center;
+            margin-top: 40px;
+
+            ul {
+                list-style: none;
+                display: flex;
+
+            }
+        }
+
+        .nav-item {
+            margin-right: 10px;
+        }
+
+        .nav-link {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 32px;
+            text-transform: uppercase;
+            color: #C7C7C7;
+        }
+
+        .nav-link.active {
+            font-weight: 600;
+            color: #FFFFFF;
+        }
+
+        .active-white {
+            color: #FFFFFF;
+        }
+
+        .social_network {
+            display: flex;
+
+            .networks_item:not(:last-child) {
+                margin-right: 48px;
+                margin-bottom: 24px;
+            }
+
+        }
+
+        .projekt_name {
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 32px;
+            text-transform: uppercase;
+            color: #FFFFFF;
+        }
+    }
+}
+
+
+
+// .navbar-light .navbar-nav .nav-link.active {
+//     color: $activ;
+//     font-weight: 600;
+// }
+
+// .navbar-light .navbar-nav .nav-link {
+//     color: $disactiv;
+//     font-weight: 500;
+//     font-size: 18px;
+//     line-height: 32px;
+//     text-transform: uppercase;
+// }
