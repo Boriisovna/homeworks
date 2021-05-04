@@ -58,6 +58,14 @@ body {
   margin-right: 100px;
 }
 
+.wrapper_header .navbar-light .navbar-nav .nav-link:hover {
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+  color: #010c11;
+  font-size: 19px;
+  font-weight: 900;
+}
+
 @media (max-width: 1230px) {
   .wrapper_header .navbar-expand-lg .navbar-collapse {
     margin-left: 25vw;
@@ -119,12 +127,20 @@ body {
   padding: 16px;
 }
 
+.about_project .about_project_button button:hover {
+  background-color: #4d5559d1;
+  -webkit-transition-duration: 0.4s;
+          transition-duration: 0.4s;
+  color: #FFFFFF;
+}
+
 .about_project .arrow img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   margin-top: 128px;
   margin-bottom: 110px;
+  cursor: pointer;
 }
 
 .aside {
@@ -154,6 +170,14 @@ body {
   text-transform: uppercase;
   background: #010101;
   padding: 6px;
+  cursor: pointer;
+}
+
+.aside_networks_item:hover {
+  background-color: #4d5559d1;
+  -webkit-transition-duration: 0.4s;
+          transition-duration: 0.4s;
+  color: #000000;
 }
 
 .aside_networks_item {
@@ -289,7 +313,7 @@ body {
   text-transform: uppercase;
 }
 
-.two {
+.group {
   position: absolute;
   bottom: -40px;
   left: -20px;
@@ -326,7 +350,7 @@ body {
   margin-left: 50px;
 }
 
-.statistics_filming .two {
+.statistics_filming .group {
   bottom: -70px;
   left: -70px;
 }
@@ -368,7 +392,7 @@ body {
           flex-direction: column;
 }
 
-.statistics_brand .two {
+.statistics_brand .group {
   left: -45px;
 }
 
@@ -390,7 +414,7 @@ body {
           flex-direction: column;
 }
 
-.statistics_view .two {
+.statistics_view .group {
   position: absolute;
   bottom: -40px;
   left: -60px;
@@ -402,7 +426,7 @@ body {
         flex-wrap: wrap;
     margin: 0 30px;
   }
-  .statistics_text .statistics_view .two {
+  .statistics_text .statistics_view .group {
     margin-left: 40px;
   }
   .statistics_text .statistics_shadow {
@@ -487,7 +511,7 @@ body {
     font-size: 16px;
     line-height: 20px;
   }
-  .statistics .statistics_brand .two {
+  .statistics .statistics_brand .group {
     left: 10px;
   }
   .statistics .statistics_filming .statistics_title {
@@ -518,7 +542,7 @@ body {
 }
 
 @media (max-width: 482px) {
-  .statistics .statistics_brand .two {
+  .statistics .statistics_brand .group {
     left: -10px;
   }
 }
@@ -637,6 +661,13 @@ body {
   padding: 12px;
 }
 
+.photo_block .photo_block_button button:hover {
+  background-color: #4d5559d1;
+  -webkit-transition-duration: 0.4s;
+          transition-duration: 0.4s;
+  color: #FFFFFF;
+}
+
 .photo_block .gallery-photo_block:first-child {
   -ms-grid-column: span 2;
       grid-column-start: span 2;
@@ -709,6 +740,14 @@ body {
   display: -ms-flexbox;
   display: flex;
   padding: 11px 16px;
+}
+
+.button_more button:hover {
+  background-color: #cfcfcf94;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  color: #000000;
+  border: none;
 }
 
 @media (max-width: 800px) {
@@ -798,6 +837,10 @@ body {
           align-items: center;
 }
 
+.partners_title .arrows {
+  cursor: pointer;
+}
+
 .partners .title {
   color: black;
 }
@@ -823,6 +866,7 @@ body {
   margin-right: 50px;
   -ms-flex-line-pack: justify;
       align-content: space-between;
+  cursor: pointer;
 }
 
 .partners .socar,
@@ -1115,9 +1159,25 @@ footer .navigation_block .nav-link {
   color: #C7C7C7;
 }
 
+footer .navigation_block .nav-link:hover {
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+  color: #738e9ca3;
+  font-size: 15px;
+  font-weight: 900;
+}
+
 footer .navigation_block .nav-link.active {
   font-weight: 600;
   color: #FFFFFF;
+}
+
+footer .navigation_block .nav-link.active:hover {
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+  color: #054663;
+  font-size: 19px;
+  font-weight: 900;
 }
 
 footer .navigation_block .active-white {
@@ -1141,6 +1201,13 @@ footer .navigation_block .projekt_name {
   line-height: 32px;
   text-transform: uppercase;
   color: #FFFFFF;
+}
+
+footer .networks_item path:hover {
+  -webkit-transition-duration: 0.1s;
+          transition-duration: 0.1s;
+  fill: #054663;
+  cursor: pointer;
 }
 
 @media (max-width: 800px) {
