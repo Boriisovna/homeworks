@@ -39,6 +39,8 @@ body {
 .wrapper_header .navbar-light .navbar-nav .nav-link.active {
   color: #FFFFFF;
   font-weight: 600;
+  z-index: -2;
+  padding-bottom: 40px;
 }
 
 .wrapper_header .navbar-light .navbar-nav .nav-link {
@@ -47,10 +49,14 @@ body {
   font-size: 18px;
   line-height: 32px;
   text-transform: uppercase;
+  z-index: -2;
+  padding-bottom: 40px;
 }
 
 .wrapper_header .navbar-light .navbar-brand {
   margin: 0 0 0 120px;
+  z-index: 2;
+  position: relative;
 }
 
 .wrapper_header .navbar-expand-lg .navbar-collapse {
@@ -186,10 +192,49 @@ body {
 
 .navbar-light .navbar-toggler-icon {
   background-image: url(/diplom/images/nav.svg);
+  z-index: 2;
+  position: relative;
 }
 
 .navbar-light .navbar-toggler {
   border: none;
+}
+
+.appear {
+  display: none;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 32px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  position: relative;
+  left: 30%;
+  margin-right: 120px;
+  z-index: 2;
+  position: relative;
+}
+
+.hide {
+  display: block;
+}
+
+@media (max-width: 990px) {
+  .wrapper_header .navbar-expand-lg .navbar-collapse {
+    margin: 25% 35vw;
+  }
+  .wrapper_header .navbar-expand-lg .navbar-collapse .hide {
+    display: none;
+  }
+  .appear {
+    display: block;
+  }
+  .appear:hover {
+    -webkit-transition-duration: 0.3s;
+            transition-duration: 0.3s;
+    color: #010c11;
+    font-size: 19px;
+    font-weight: 900;
+  }
 }
 
 @media (max-width: 920px) {
@@ -261,6 +306,74 @@ body {
   }
   .arrow {
     padding-top: 250px;
+  }
+}
+
+@media (max-width: 990px) {
+  .wrapper_header .navbar-expand-lg .navbar-collapse::after {
+    content: "";
+    background: #010101;
+    color: blanchedalmond;
+    position: absolute;
+    width: 101%;
+    height: 250%;
+    min-height: 900px;
+    top: -5px;
+    left: 0;
+    z-index: 1;
+  }
+  .wrapper_header .navbar-expand-lg .navbar-collapse::before {
+    content: "Ukraine gravity production";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 85%;
+    left: 0;
+    z-index: 2;
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 50px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: white;
+    opacity: 0.07;
+  }
+  .navbar-nav {
+    z-index: 2;
+    position: absolute;
+  }
+}
+
+@media (max-width: 780px) {
+  .wrapper_header .navbar-expand-lg .navbar-collapse::after {
+    height: 290%;
+  }
+}
+
+@media (max-width: 608px) {
+  .wrapper_header .navbar-expand-lg .navbar-collapse::after {
+    height: 340%;
+  }
+}
+
+@media (max-width: 513px) {
+  .wrapper_header .navbar-expand-lg .navbar-collapse::after {
+    height: 385%;
+  }
+}
+
+@media (max-width: 470px) {
+  .wrapper_header .navbar-expand-lg .navbar-collapse::after {
+    height: 410%;
+  }
+}
+
+@media (max-width: 420px) {
+  .wrapper_header .navbar-expand-lg .navbar-collapse::after {
+    height: 430%;
   }
 }
 
@@ -476,9 +589,23 @@ body {
   margin-top: 10px;
 }
 
+@media (max-width: 1045px) {
+  .statistics_photo {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .statistics_photo img {
+    margin: 10px;
+  }
+}
+
 @media (max-width: 720px) {
   .statistics_photo {
     margin-bottom: 56px;
+  }
+  .statistics_photo img {
+    margin: 0px;
   }
   .statistics_photo_block {
     padding-top: 10px;
@@ -562,8 +689,12 @@ body {
   margin-top: 32px;
 }
 
-.history_pictures {
-  width: 50%;
+.history_pictures img {
+  z-index: 1;
+}
+
+.history_text {
+  z-index: 3;
 }
 
 .history_pictures::before {
@@ -578,6 +709,13 @@ body {
           filter: blur(1px);
 }
 
+@media (max-width: 1044px) {
+  .history .paragraph {
+    width: 140%;
+    z-index: 3;
+  }
+}
+
 @media (max-width: 860px) {
   .history {
     margin-bottom: 56px;
@@ -585,18 +723,41 @@ body {
   .history_text {
     z-index: 1;
     position: absolute;
-  }
-  .history_pictures {
-    width: 100%;
-    overflow-x: hidden;
+    max-height: auto;
+    max-width: 100%;
   }
   .title {
     font-size: 18px;
+    padding: 5px;
   }
   .history .paragraph {
     font-size: 14px;
     line-height: 22px;
     margin-top: 16px;
+    width: auto;
+    max-height: auto;
+    padding: 5px;
+  }
+}
+
+@media (max-width: 565px) {
+  .history img {
+    display: none;
+  }
+  .history .paragraph {
+    font-size: 12px;
+  }
+  .history_pictures {
+    background-image: url(/diplom/images/image58.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left;
+    position: relative;
+    height: 560px;
+    width: 100%;
+  }
+  .history_text {
+    min-width: 340px;
   }
 }
 
